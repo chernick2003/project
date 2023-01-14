@@ -1,31 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="css/header_footer.css" />
-    <title>Document</title>
+    <title>ELECTROnics</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
   </head>
-
   <body>
-    <section class="main">
-      <header>
-        <div class="header">
-            <div class="logo">          <img src="images/imac-50.png" alt="logo" />
-</div>
-          <nav>
-            <ul class="nav-item">
-              <li class="nav"><a href="#">Home</a></li>
-              <li class="nav"><a href="#">About</a></li>
-              <li class="nav"><a href="#">Contacts</a></li>
-              <li class="nav"><a href="#">search</a></li>
-              <li class="nav"><a href="#">cartitem</a></li>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <nav class="nav">
+            <div class="nav__logo">
+              <h2 class="logo"><a href="#!">ELECTROnics</a></h2>
+            </div>
+
+            <ul class="nav__list nav__list--header">
+              <li><a href="#!" class="active">Home</a></li>
+              <li><a href="#!">About</a></li>
+              <li><a href="#!">Search</a></li>
+              <li><a href="#!">Cart</a></li>
             </ul>
+
+            <ul class="nav__login nav__login--header">
+              <li><a href="#!">Sign up</a></li>
+              <li><a href="#!" class="btn btn--login">Login</a></li>
+            </ul>
+
+            <button type="button" class="nav__toggle">
+              <div class="menu-icon-wrapper">
+                <div class="menu-icon"></div>
+              </div>
+            </button>
           </nav>
         </div>
-      </header>
-    </section>
+        <section class="carusel">
+          <div class="container-right">
+            <div class="carusel__row">
+              <div class="carusel__content">
+                <h2 class="carusel__title">
+                  <span>Choose the right</span>
+                  Laptop
+                </h2>
+                <div class="carusel__text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carusel__slider">
+                <div class="slider">
+                  <div class="owl-carousel">
+                    <img
+                      class="slider__item"
+                      src="./images/laptop1.jpg"
+                      alt="Slider item"
+                    />
+                    <img
+                      class="slider__item"
+                      src="./images/laptop2.jpg"
+                      alt="Slider item"
+                    />
+                    <img
+                      class="slider__item"
+                      src="./images/laptop3.webp"
+                      alt="Slider item"
+                    />
+                  </div>
+                  <button class="slider__btn slider__btn--prev">
+                    <img src="./images/arrow-left.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="">
+      <section class=" "></section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav nav--footer">
+          <div class="nav__logo">
+            <h2 class="logo logo--footer"><a href="#!">ELECTROnics</a></h2>
+          </div>
+
+          <ul class="nav__list nav__list--footer">
+            <li><a href="#!" class="active">Home</a></li>
+            <li><a href="#!">About</a></li>
+
+            <li><a href="#!">Cart</a></li>
+          </ul>
+
+          <ul class="nav__login nav__login--footer">
+            <li><a href="#!">Sign up</a></li>
+            <li><a href="#!" class="btn btn--login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
