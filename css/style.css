@@ -1,0 +1,65 @@
+/* author: Daniel Haim */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-wrapper .search {
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  border: 3px solid #000;
+  border-radius: 50%;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.search-wrapper .search input {
+  font-family: Helvetica;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  height: 30px;
+  padding: 0 6px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+.search-wrapper .search:after {
+  position: absolute;
+  top: 21.6px;
+  right: -9.6px;
+  display: block;
+  width: 3px;
+  height: 30px;
+  content: "";
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+.search-wrapper .search:hover,
+.search-wrapper .search:focus {
+  width: 300px;
+  border-radius: 0;
+}
+.search-wrapper .search:hover:after,
+.search-wrapper .search:focus:after {
+  height: 0;
+}
+.search-wrapper .search:hover input,
+.search-wrapper .search:focus input {
+  opacity: 1;
+}
